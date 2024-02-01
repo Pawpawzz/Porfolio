@@ -15,7 +15,7 @@
     <div class="header container">
       <div class="nav-bar">
         <div class="brand">
-          <a href="#hero">
+          <a class="button" href="#hero">
             <h1>Portfolio</h1>
           </a>
         </div>
@@ -24,11 +24,11 @@
             <div class="bar"></div>
           </div>
           <ul>
-            <li><a href="#hero" data-after="Home">Accueil</a></li>
-            <li><a href="#services" data-after="Service">Services</a></li>
-            <li><a href="#projects" data-after="Projects">Projets</a></li>
-            <li><a href="#about" data-after="About">À propos de moi</a></li>
-            <li><a href="#contact" data-after="Contact">Contacts</a></li>
+            <li><a class="button" href="#hero" data-after="Home">Accueil</a></li>
+            <li><a class="button" href="#services" data-after="Service">Services</a></li>
+            <li><a class="button" href="#projects" data-after="Projects">Projets</a></li>
+            <li><a class="button" href="#about" data-after="About">À propos de moi</a></li>
+            <li><a class="button" href="#contact" data-after="Contact">Contacts</a></li>
           </ul>
         </div>
       </div>
@@ -61,24 +61,24 @@
         <div class="service-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
           <h2>Apprenti Développeur chez BPCE-IT</h2>
-          <ul><li>Drivers Napalm: Bibliothèque Python communiquant avec des équipements réseau.</li>
-            <li>Morning Check: application web de reporting quotidien</li>
+          <ul><li><a href="#napalm">Drivers Napalm: Bibliothèque Python communiquant avec des équipements réseau.</a></li>
+            <li><a href="#morningcheck">Morning Check: application web de reporting quotidien</a></li>
           </ul>
         </div>
         <div class="service-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
           <h2>BUT Informatique</h2>
-          <ul><li>UniRide: application web de covoiturage destinée aux étudiants</li>
-            <li>Roomies: application mobile de recherche de logements destinée aux étudiants</li>
-            <li>Eaxo: application web de création de fiches d'exercices destinée aux professeurs du primaire</li>
-            <li>Terraria-Like: Jeu en 2D s'inspirant de Terraria</li>
-            <li>Jeu Mobile: inspiré d'un jeu mobile existant ENYO</li>
+          <ul><li><a href="#uniride">UniRide: application web de covoiturage destinée aux étudiants</a></li>
+            <li><a href="#roomies">Roomies: application mobile de recherche de logements destinée aux étudiants</a></li>
+            <li><a href="#eaxo">Eaxo: application web de création de fiches d'exercices destinée aux professeurs du primaire</a></li>
+            <li><a href="#terrarialike">Terraria-Like: Jeu en 2D s'inspirant de Terraria</a></li>
+            <li><a href="#enyo">Jeu sur terminal inspiré d'un jeu mobile existant ENYO</a></li>
           </ul>
         </div>
         <div class="service-item">
           <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/services.png" /></div>
           <h2>Première/Terminal</h2>
-          <p>Jeu d'echecs sans IA</p>
+          <p><a href="#echec">Jeu d'echecs sans IA</a></p>
         </div>
       </div>
     </div>
@@ -91,7 +91,7 @@
       <div class="projects-header">
         <h1 class="section-title">Mes <span>Projets</span></h1>
       </div>
-      <div class="all-projects">
+      <div class="all-projects" id="napalm">
         <div class="project-item">
           <div class="project-info">
             <h1>Drivers Napalm</h1>
@@ -111,7 +111,7 @@
             <img src="resources/images/napalm_automation.png" alt="img">
           </div>
         </div>
-        <div class="project-item">
+        <div class="project-item" id="morningcheck">
           <div class="project-info">
             <h1>Morning Check</h1>
             <h2>Apprenti Développeur chez BPCE-IT</h2>
@@ -125,10 +125,10 @@
               
           </div>
           <div class="project-img">
-            <img src="" alt="img">
+            <img src="resources/images/form.png" alt="img">
           </div>
         </div>
-        <div class="project-item">
+        <div class="project-item" id="uniride">
           <div class="project-info">
             <h1>UniRide</h1>
             <h2>BUT Informatique</h2>
@@ -146,7 +146,7 @@
             <img src="resources/images/uniride.png" alt="img">
           </div>
         </div>
-        <div class="project-item">
+        <div class="project-item" id="roomies">
           <div class="project-info">
             <h1>Roomies</h1>
             <h2>BUT Informatique</h2>
@@ -166,7 +166,7 @@
             <img src="resources/images/roomies.png" alt="img">
           </div>
         </div>
-        <div class="project-item">
+        <div class="project-item" id="eaxo">
           <div class="project-info">
             <h1>Eaxo</h1>
             <h2>BUT Informatique</h2>
@@ -186,7 +186,7 @@
             <img src="resources/images/eaxo.jpg" alt="img">
           </div>
         </div>
-        <div class="project-item">
+        <div class="project-item" id="terrarialike">
           <div class="project-info">
             <h1>Terraria-Like</h1>
             <h2>BUT Informatique</h2>
@@ -207,7 +207,7 @@
             <img src="resources/images/terraria.jpg" alt="img">
           </div>
         </div>
-        <div class="project-item">
+        <div class="project-item" id="enyo">
           <div class="project-info">
             <h1>Enyo-Like</h1>
             <h2>BUT Informatique</h2>
@@ -225,31 +225,10 @@
             </p>
           </div>
           <div class="project-img">
-            <img src="resources/images/terraria.jpg" alt="img">
+            <img src="resources/images/enyo.png" alt="img">
           </div>
         </div>
-        <div class="project-item">
-          <div class="project-info">
-            <h1>Enyo-Like</h1>
-            <h2>BUT Informatique</h2>
-            <p>
-              Ce jeu a été réalisé en Java en groupe de 2. Il est inspiré d'un jeu mobile appelé "Enyo". C'est un jeu de plateau tour par tour en PvE (Player versus environment),
-              où le joueur combat des monstres et a pour objectif de tous les éliminés sans perdre tous ses points de vie. Les monstres et 
-              le joueur prennent des dégats par des attaques au corps à corps ou à distance ou en étant pousser sur certains obstacles.
-            </p>
-            <p>
-              À l'issue de cette expérience, j'ai tout simplement appris les bases de la programmation en Java puisque ca a été la première 
-              application Java que j'ai développé, j'ai pu renforcé mes bases en programmation et ma capacité à travailler en équipe.
-            </p>
-            <p>
-              lien vers le projet: <a href="https://github.com/Pawpawzz/JeuDev_SAE_S1"> Enyo-Like </a>
-            </p>
-          </div>
-          <div class="project-img">
-            <img src="" alt="img">
-          </div>
-        </div>
-        <div class="project-item">
+        <div class="project-item" id="echec">
           <div class="project-info">
             <h1>Echecs</h1>
             <h2>Terminal</h2>
@@ -284,7 +263,7 @@
       <div class="col-right">
         <h1 class="section-title">À propos de <span>moi</span></h1>
         <h2></h2>
-        <p>Actuellement en formation BUT Informatique en alternance, je souhaite poursuivre mes études en école d'ingénieur.</p>
+        <p>Actuellement en 3eme année de BUT Informatique en alternance, je souhaite poursuivre mes études en école d'ingénieur.</p>
         <a href="resources/CV.pdf" class="cta">Format PDF</a>
       </div>
     </div>
